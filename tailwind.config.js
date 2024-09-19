@@ -5,7 +5,17 @@ export default {
     container: {
       center: true
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "Inter": ["Inter", "serif"],
+        "Poppins": ["Poppins", "serif"]
+      },
+      colors: {
+        "primary": "#274760",
+        "secondary": "#307BC4",
+        "third": "#ffffff"
+      }
+    },
   },
   plugins: [],
 };
