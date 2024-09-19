@@ -1,0 +1,32 @@
+import { ImageHomeHealthFirst } from "../../../../assets/images/home";
+
+const HealthFirst = () => {
+  return (
+    <section className="pt-[112px] pb-[35px]">
+      <div
+        className="container bg-center bg-no-repeat bg-cover max-w-7xl"
+        style={{
+          backgroundImage: `url(${ImageHomeHealthFirst.layerHealthFirst})`,
+        }}
+      >
+        <div className="h-[412px] flex items-center justify-between">
+          <div className="ms-[90px] flex flex-col gap-6">
+            <h2 className="text-[54px] text-third font-bold leading-tight">
+              Don't Let Your Health <br /> Take A Backseat!
+            </h2>
+            <p className="text-xl font-Poppins text-primary">
+              Schedule an appointment with one of our <br />
+              experienced medical professionals today!
+            </p>
+          </div>
+            <img
+              src={ImageHomeHealthFirst.bannerHealthFirst}
+              alt="Health First"
+              className="-translate-y-10 "
+            />
+        </div>
+      </div>
+    </section>
+  );
+};
+export default HealthFirst;
