@@ -4,17 +4,17 @@ const HealthFirst = () => {
   return (
     <section className="pt-[112px] pb-[35px]">
       <div
-        className="container bg-center bg-no-repeat bg-cover max-w-7xl"
+        className="container px-4 bg-center bg-no-repeat bg-cover max-w-7xl lg:px-0"
         style={{
           backgroundImage: `url(${ImageHomeHealthFirst.layerHealthFirst})`,
         }}
       >
         <div className="h-[412px] flex items-center justify-between">
-          <div className="ms-[90px] flex flex-col gap-6">
-            <h2 className="text-[54px] text-third font-bold leading-tight">
+          <div className="lg:ms-[90px] flex flex-col gap-6 w-full">
+            <h2 className="lg:text-[54px] md:text-4xl sm:text-2xl text-third font-bold leading-tight">
               Don't Let Your Health <br /> Take A Backseat!
             </h2>
-            <p className="text-xl font-Poppins text-primary">
+            <p className="text-sm lg:text-xl font-Poppins text-primary">
               Schedule an appointment with one of our <br />
               experienced medical professionals today!
             </p>
@@ -22,7 +22,7 @@ const HealthFirst = () => {
             <img
               src={ImageHomeHealthFirst.bannerHealthFirst}
               alt="Health First"
-              className="-translate-y-10 "
+              className="lg:-translate-y-10 lg:w-full w-[40%]  "
             />
         </div>
       </div>

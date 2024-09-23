@@ -6,8 +6,8 @@ import SectionTitle from "../../../elements/SectionTitle";
 const AboutUs = () => {
   return (
     <section className="pt-[25px] pb-[50px] relative">
-      <div className="container max-w-7xl">
-        <div className="grid grid-cols-2 place-items-start gap-[47px] ">
+      <div className="container px-4 max-w-7xl lg:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-start lg:gap-[47px] ">
           <img
             src={ImageHomeAboutUs.layerAbout}
             alt="layer about us"
@@ -20,7 +20,7 @@ const AboutUs = () => {
               className=""
             />
           </div>
-          <div className="mt-[125px] flex flex-col gap-[72px]">
+          <div className="lg:mt-[125px] flex flex-col gap-[72px]">
             <div>
               <SectionTitle>About Us</SectionTitle>
               <SectionSubTitle>PRO HEALTH</SectionSubTitle>

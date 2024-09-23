@@ -7,7 +7,7 @@ const CardSomeReviews = () => {
         <div
           key={values.id}
           className={` flex w-[403px] h-[120px] items-center gap-5 py-5 rounded-2xl px-9 ${
-            index % 2 === 1 ? "ml-[110px] bg-third" : ""
+            index % 2 === 1 ? "md:ml-[110px] ml-5 bg-third" : ""
           }`}
         >
           <img src={values.avatar} alt={values.name} />
@@ -18,7 +18,7 @@ const CardSomeReviews = () => {
             <p className="text-lg font-Poppins text-primary">{values.origin}</p>
           </div>
           <span
-            className={`absolute -right-1 block w-2 h-2 rounded-full bg-secondary ${
+            className={`absolute -right-1 hidden md:block w-2 h-2 rounded-full bg-secondary ${
               index % 2 === 1 ? "w-4 h-4 -right-2" : ""
             }`}
           ></span>

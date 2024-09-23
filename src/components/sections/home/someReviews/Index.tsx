@@ -7,17 +7,17 @@ import { IconsAll } from "../../../../assets/icons";
 const SomeReviews = () => {
   return (
     <section className="pt-[72px] pb-[112px]">
-      <div className="container max-w-7xl">
+      <div className="container px-4 max-w-7xl lg:px-0">
         <div className="text-center mb-[72px]">
           <SectionTitle>Some Reviews</SectionTitle>
           <SectionSubTitle>OF OUR CLIENTS</SectionSubTitle>
         </div>
-        <div className="flex items-center justify-center">
-          <div className="relative grid w-1/2 grid-rows-3 border-r-2 border-secondary gap-9">
+        <div className="flex flex-col justify-center gap-10 md:items-center md:flex-row md:gap-0">
+          <div className="relative grid w-full grid-rows-3 md:w-1/2 md:border-r-2 border-secondary gap-9">
             <CardSomeReviews />
           </div>
-          <div className="flex items-start gap-x-[38px] w-1/2 ps-[72px]">
-            <img src={IconsAll.quote} alt="Quote" />
+          <div className="flex flex-col md:flex-row items-start md:gap-[38px] w-full md:w-1/2 md:ps-[72px]">
+            <img src={IconsAll.quote} alt="Quote" className="w-8 h-8 md:w-16 md:h-10" />
             <div className="flex flex-col py-10 gap-y-[30px]">
               <p className="text-base font-Poppins text-primary/50">
                 The pediatrician was great with him and made him feel at ease,

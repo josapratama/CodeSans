@@ -41,3 +41,35 @@ export const ImageHomeHealthFirst = {
   layerHealthFirst,
   bannerHealthFirst,
 };
+
+// Latest Update
+import theBenefitOfMindFulnes from "./thebenefitofmindfulnes.png"
+import theImportance from "./theimportance.png"
+import healthyEating from "./healthyeating.png"
+export const ImageHomeLatestUpdate = {
+    theBenefitOfMindFulnes,
+    theImportance,
+    healthyEating
+}
+
+
+// Appointment
+import layerAppointment from "./layer-appointment.png"
+export const ImageHomeAppointment = {
+    layerAppointment
+}
+
+
+// Pertnert
+import partnert from "./partnert.png"
+export const ImageHomePartnert = {
+    partnert
+}
+
+// Footer
+import logoFooter from "./logo-footer.png"
+import layerFooter from "./layer-footer.png"
+export const ImageHomeFooter = {
+    logoFooter,
+    layerFooter
+}

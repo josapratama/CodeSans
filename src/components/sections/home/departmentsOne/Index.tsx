@@ -14,7 +14,7 @@ const DepartmentsOne = () => {
         <div className="text-center ">
           <SectionTitle>Departments</SectionTitle>
         </div>
-        <div className="grid w-full grid-cols-5 translate-y-[85px] justify-items-center">
+        <div className="grid w-full grid-cols-3 md:grid-cols-4 lg:grid-cols-5 translate-y-[85px] justify-items-center gap-4">
           <CardDepartmentsOne />
         </div>
       </div>

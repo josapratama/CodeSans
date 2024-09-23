@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .transition-global {
+        @apply transition-all duration-1000 ease-in-out
+    }
+}
+
 @layer base {
   body {
     @apply font-Inter bg-[#F5F5F5];
@@ -21,12 +27,12 @@
   }
 
   @font-face {
-    font-family: 'Poppins';
-    src: url('./assets/fonts/Poppins-Regular.woff2') format('woff2'),
-        url('./assets/fonts/Poppins-Regular.woff') format('woff'),
-        url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2"),
+      url("./assets/fonts/Poppins-Regular.woff") format("woff"),
+      url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+  }
 }
