@@ -6,6 +6,7 @@ import HomePages from "./pages/HomePages.tsx";
 import { Provider } from "react-redux";
 import store from "./redux/store/Store.ts";
 import GalleryPages from "./pages/GalleryPages.tsx";
+import AboutPages from "./pages/AboutPages.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/gallery",
     element: <GalleryPages />
+  },
+  {
+    path: "/about",
+    element: <AboutPages />
   }
 ]);
 

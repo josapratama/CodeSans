@@ -3,7 +3,7 @@ import { ImageGalleryHome } from "../../../../assets/images/gallery/Index";
 const HeroBanner = () => {
   return (
     <div
-      className="relative pt-32 mb-[55px] bg-center bg-no-repeat bg-cover"
+      className="relative pt-32 mb-[50px] bg-center bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${ImageGalleryHome.layerGallery})` }}
     >
       <img

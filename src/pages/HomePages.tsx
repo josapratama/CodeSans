@@ -15,20 +15,18 @@ import UsualyAsked from "../components/sections/home/usualyAsked/Index";
 const HomePages = () => {
   return (
     <>
-      <Header classname="sticky bg-third"/>
-      <main>
-        <HeroBanner />
-        <OurValues />
-        <AboutUs />
-        <DepartmentsOne />
-        <DepartmentsTwo />
-        <SomeReviews />
-        <HealthFirst />
-        <LatestUpdate/>
-        <Appointment />
-        <UsualyAsked/>
-        <Partnert />
-      </main>
+      <Header classname="sticky bg-third" />
+      <HeroBanner />
+      <OurValues />
+      <AboutUs />
+      <DepartmentsOne />
+      <DepartmentsTwo />
+      <SomeReviews />
+      <HealthFirst />
+      <LatestUpdate />
+      <Appointment />
+      <UsualyAsked />
+      <Partnert />
       <Footer />
     </>
   );

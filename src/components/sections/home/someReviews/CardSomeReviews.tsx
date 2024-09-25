@@ -6,8 +6,8 @@ const CardSomeReviews = () => {
       {dataCardSomeReviews?.map((values, index) => (
         <div
           key={values.id}
-          className={` flex w-[403px] h-[120px] items-center gap-5 py-5 rounded-2xl px-9 ${
-            index % 2 === 1 ? "md:ml-[110px] ml-5 bg-third" : ""
+          className={` flex w-full lg:w-[403px] h-[120px] items-center gap-5 py-5 rounded-2xl px-9 ${
+            index % 2 === 1 ? "md:ml-[110px] bg-third" : ""
           }`}
         >
           <img src={values.avatar} alt={values.name} />

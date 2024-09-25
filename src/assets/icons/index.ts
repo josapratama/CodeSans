@@ -12,10 +12,17 @@ import cardiology from "./cardiology.svg";
 import neurology from "./neurology.svg";
 
 // departments two
-import award from "./award.svg"
+import award from "./award.svg";
 
 // some reviews
-import quote from "./quote.svg"
+import quote from "./quote.svg";
+
+// icon about page
+// why choose us
+import comprehensive from "./comprehensive.svg";
+import facilities from "./facilities.svg";
+import patient from "./patient.svg";
+import professional from "./professional.svg";
 
 export const IconsAll = {
   compassion,
@@ -27,6 +34,9 @@ export const IconsAll = {
   cardiology,
   neurology,
   award,
-  quote
+  quote,
+  comprehensive,
+  facilities,
+  patient,
+  professional,
 };
-

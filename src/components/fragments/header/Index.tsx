@@ -22,11 +22,12 @@ const Header = (props: { classname?: string }) => {
                   key={values.id}
                   className="relative"
                   onMouseEnter={() => handleIsOpen(true)}
+                  onMouseLeave={() => handleIsOpen(false)}
                 >
                   <Link to={values.url}>{values.title}</Link>
                   {isOpen && values.isMenu ? (
                     <div
-                      className="absolute px-4 py-2 bg-third -right-4 top-14"
+                      className="absolute px-4 py-5 bg-third -right-6 top-6"
                       onMouseLeave={() => handleIsOpen(false)}
                     >
                       <Link to="/gallery">Gallery</Link>

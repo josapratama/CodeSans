@@ -10,13 +10,13 @@ const Appointment = () => {
     <section className="pt-5 pb-[50px]">
       <div className="container relative px-4 max-w-7xl lg:px-0">
         <div className="flex justify-between">
-          <div>
+          <div className="w-full lg:w-[45%] overflow-hidden">
             <div className="mb-20">
               <SectionSubTitle>BOOK AN</SectionSubTitle>
               <SectionTitle>Appointment</SectionTitle>
             </div>
-            <form>
-              <div className="flex flex-col md:flex-row">
+            <form className="w-full ">
+              <div className="flex flex-col w-full ">
                 <label htmlFor="name" className="px-3 pb-6">
                   <h4 className="text-base font-Poppins text-primary mb-[10px]">
                     Name
@@ -42,7 +42,7 @@ const Appointment = () => {
                   />
                 </label>
               </div>
-              <label htmlFor="medicalRecord" className="block px-3 pb-6">
+              <label htmlFor="medicalRecord" className="block px-3 pb-6 ">
                 <h4 className="text-base font-Poppins text-primary mb-[10px]">
                   Medical Record Number
                 </h4>
@@ -54,7 +54,7 @@ const Appointment = () => {
                   className="text-base border-2 lg:w-full h-[60px] outline-none rounded-2xl border-secondary/50 font-Poppins text-primary/50 px-[21px] py-[18px]"
                 />
               </label>
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col md:flex-row ">
                 <label htmlFor="preferredDate" className="px-3 pb-6 ">
                   <h4 className="text-base font-Poppins text-primary mb-[10px]">
                     Preferred Date
@@ -206,7 +206,7 @@ const Appointment = () => {
               </div>
             </form>
           </div>
-          <div>
+          <div className="">
             <img
               src={ImageHomeAppointment.layerAppointment}
               alt="Appointment"

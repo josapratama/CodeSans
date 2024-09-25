@@ -6,6 +6,9 @@ export default {
       center: true
     },
     extend: {
+      boxShadow: {
+        'shadowBox': "1px 1px 15px secondary"
+      },
       fontFamily: {
         "Inter": ["Inter", "serif"],
         "Poppins": ["Poppins", "serif"]

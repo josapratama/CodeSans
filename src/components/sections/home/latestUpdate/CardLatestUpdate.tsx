@@ -6,7 +6,7 @@ const CardLatestUpdate = () => {
   return (
     <>
       {dataCardLatestUpdate?.map((values) => (
-        <div key={values.id} className="rounded-xl lg:w-[416px] lg:h-[575px] shadow-2xl shadow-secondary/10">
+        <div key={values.id} className="rounded-xl lg:w-[408px] lg:h-[575px] shadow-2xl shadow-secondary/10">
           <div>
             <img src={values.image} alt={values.title} className="w-full" />
           </div>

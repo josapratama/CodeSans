@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer
-      className="relative pt-[165px]  w-screen"
+      className="relative pt-[165px] bg-cover lg:bg-auto"
       style={{ backgroundImage: `url(${ImageHomeFooter.layerFooter})` }}
     >
       <div className="container px-4 max-w-7xl lg:px-0">
@@ -18,7 +18,7 @@ const Footer = () => {
         />
 
         {/* <div className="flex flex-col md:flex-row items-start justify-around gap-5 lg:gap-[50px] py-36"> */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] py-36 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] py-36 gap-10 ">
           <div>
             <h2 className="lg:mb-[63px] mb-[30px]">CodeSans health</h2>
             <ul className="flex flex-col gap-y-[13px]">
@@ -79,10 +79,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-[37px] bg-secondary w-full">
-        <div className="flex justify-between px-4 lg:px-20">
-          <div className="flex items-center gap-[30px]">
-            <h3 className="text-sm md:text-base text-third">Follow Us</h3>
-            <div className="flex items-center gap-4">
+        <div className="flex items-center justify-between px-4 lg:px-20">
+          <div className="flex items-center gap-2 w-full lg:gap-[30px]">
+            <h3 className="text-[10px] md:text-base text-third">Follow Us</h3>
+            <div className="flex items-center gap-2 lg:gap-4">
               <Link to="/" className="p-1 rounded-full bg-third/50 text-secondary">
                 <FaFacebookF />
               </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <p className="text-sm md:text-base text-third/50 font-Poppins">
+          <p className="text-[10px] w-full md:text-base text-start md:text-end text-third/50 font-Poppins">
             Copyright © 2024 All rights reserved.
           </p>
         </div>

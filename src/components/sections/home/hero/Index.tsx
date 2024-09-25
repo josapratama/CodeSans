@@ -4,7 +4,7 @@ import SupportAndHelp from "./SupportAndHelp";
 
 const HeroBanner = () => {
   return (
-    <section
+    <div
       className={`bg-center bg-cover bg-no-repeat mb-[210px]`}
       style={{ backgroundImage: `url(${ImageHomeBanner.layerBanner})` }}
     >
@@ -21,7 +21,7 @@ const HeroBanner = () => {
           <img
             src={ImageHomeBanner.personBanner}
             alt="ZenWell Health"
-            className="absolute bottom-0 lg:-right-14"
+            className="absolute bottom-0 right-0 lg:-right-14"
           />
           <button className="flex items-center gap-x-[14px] text-lg text-primary">
             <BsPlayCircle className="lg:w-[50px] w-[30px] h-[30px] lg:h-[50px]" />
@@ -30,7 +30,7 @@ const HeroBanner = () => {
           <SupportAndHelp />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
