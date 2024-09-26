@@ -24,6 +24,9 @@ import facilities from "./facilities.svg";
 import patient from "./patient.svg";
 import professional from "./professional.svg";
 
+// icon departments page
+// ourMedicalDepartmens
+import bell from "./bell.svg";
 export const IconsAll = {
   compassion,
   excellence,
@@ -39,4 +42,5 @@ export const IconsAll = {
   facilities,
   patient,
   professional,
+  bell,
 };

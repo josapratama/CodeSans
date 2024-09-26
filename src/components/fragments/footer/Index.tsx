@@ -14,7 +14,7 @@ const Footer = () => {
         <img
           src={ImageHomeFooter.logoFooter}
           alt="Logo footer"
-          className="absolute translate-x-1/2 -top-48 right-1/2"
+          className="absolute hidden translate-x-1/2 -top-48 right-1/2 lg:block"
         />
 
         {/* <div className="flex flex-col md:flex-row items-start justify-around gap-5 lg:gap-[50px] py-36"> */}

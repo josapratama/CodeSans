@@ -27,10 +27,11 @@ const Header = (props: { classname?: string }) => {
                   <Link to={values.url}>{values.title}</Link>
                   {isOpen && values.isMenu ? (
                     <div
-                      className="absolute px-4 py-5 bg-third -right-6 top-6"
+                      className="absolute flex flex-col px-4 py-5 rounded bg-third -right-12 top-6"
                       onMouseLeave={() => handleIsOpen(false)}
                     >
                       <Link to="/gallery">Gallery</Link>
+                      <Link to="/departments">Departments</Link>
                     </div>
                   ) : null}
                 </li>
