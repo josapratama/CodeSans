@@ -5,16 +5,16 @@ import SupportAndHelp from "./SupportAndHelp";
 const HeroBanner = () => {
   return (
     <div
-      className={`bg-center bg-cover bg-no-repeat mb-[210px]`}
+      className={`bg-center bg-cover bg-no-repeat sm:pt-20 pt-10 mb-[210px]`}
       style={{ backgroundImage: `url(${ImageHomeBanner.layerBanner})` }}
     >
-      <div className="container relative px-4 max-w-7xl lg:px-0">
-        <div className="h-[856px] pt-[82px]">
-          <h2 className="font-bold md:text-4xl text-3xl lg:text-[66px] lg:leading-tight text-primary mb-[30px]">
+      <div className="container relative max-w-7xl lg:px-0 px-4">
+        <div className="sm:h-[856px] h-[700px] pt-[82px]">
+          <h2 className="font-bold md:text-4xl text-3xl lg:text-[66px] lg:leading-tight text-primary md:mb-[30px] sm:mb-[20px] mb-[10px]">
             Your Partner in <br />
             Health and Wellness
           </h2>
-           <p className="md:text-lg text-base text-primary mb-[110px]">
+           <p className="md:text-lg text-base text-primary sm:mb-[110px] mb-[50px]">
             We are commited to providing you with the best medical <br />
             and healhcare services to help you live healthier and <br /> happier
           </p>

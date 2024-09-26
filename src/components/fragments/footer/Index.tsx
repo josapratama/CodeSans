@@ -7,18 +7,18 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer
-      className="relative pt-[165px] bg-cover lg:bg-auto"
+      className="relative sm:pt-[165px] pt-32 sm:mt-0 mt-16 bg-cover h-auto w-full bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${ImageHomeFooter.layerFooter})` }}
     >
       <div className="container px-4 max-w-7xl lg:px-0">
         <img
           src={ImageHomeFooter.logoFooter}
           alt="Logo footer"
-          className="absolute hidden translate-x-1/2 -top-48 right-1/2 lg:block"
+          className="absolute sm:size-96 size-72 sm:-top-48 -top-20 right-1/2 translate-x-1/2"
         />
 
         {/* <div className="flex flex-col md:flex-row items-start justify-around gap-5 lg:gap-[50px] py-36"> */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] py-36 gap-10 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] md:py-36 py-20 md:px-20 sm:px-10 px-5 md:gap-10 gap-6 ">
           <div>
             <h2 className="lg:mb-[63px] mb-[30px]">CodeSans health</h2>
             <ul className="flex flex-col gap-y-[13px]">
@@ -40,7 +40,10 @@ const Footer = () => {
           <div>
             <ul className="flex flex-col gap-5">
               {listFooterTwo?.map((values) => (
-                <li key={values.id} className="text-sm lg:text-base text-primary font-Poppins">
+                <li
+                  key={values.id}
+                  className="text-sm lg:text-base text-primary font-Poppins"
+                >
                   <Link to={values.url}>{values.title}</Link>
                 </li>
               ))}
@@ -49,7 +52,10 @@ const Footer = () => {
           <div>
             <ul className="flex flex-col gap-5">
               {listFooterThree?.map((values) => (
-                <li key={values.id} className="text-sm lg:text-base text-primary font-Poppins">
+                <li
+                  key={values.id}
+                  className="text-sm lg:text-base text-primary font-Poppins"
+                >
                   <Link to={values.url}>{values.title}</Link>
                 </li>
               ))}
@@ -83,13 +89,22 @@ const Footer = () => {
           <div className="flex items-center gap-2 w-full lg:gap-[30px]">
             <h3 className="text-[10px] md:text-base text-third">Follow Us</h3>
             <div className="flex items-center gap-2 lg:gap-4">
-              <Link to="/" className="p-1 rounded-full bg-third/50 text-secondary">
+              <Link
+                to="/"
+                className="p-1 rounded-full bg-third/50 text-secondary"
+              >
                 <FaFacebookF />
               </Link>
-              <Link to="/" className="p-1 rounded-full bg-third/50 text-secondary">
+              <Link
+                to="/"
+                className="p-1 rounded-full bg-third/50 text-secondary"
+              >
                 <FaLinkedinIn />
               </Link>
-              <Link to="/" className="p-1 rounded-full bg-third/50 text-secondary">
+              <Link
+                to="/"
+                className="p-1 rounded-full bg-third/50 text-secondary"
+              >
                 <FaInstagram />
               </Link>
             </div>

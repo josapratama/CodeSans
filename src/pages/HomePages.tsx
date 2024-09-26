@@ -1,5 +1,3 @@
-import Footer from "../components/fragments/footer/Index";
-import Header from "../components/fragments/header/Index";
 import AboutUs from "../components/sections/home/aboutUs/Index";
 import Appointment from "../components/sections/home/appointment/Index";
 import DepartmentsOne from "../components/sections/home/departmentsOne/Index";
@@ -15,7 +13,6 @@ import UsualyAsked from "../components/sections/home/usualyAsked/Index";
 const HomePages = () => {
   return (
     <>
-      <Header classname="sticky bg-third" />
       <HeroBanner />
       <OurValues />
       <AboutUs />
@@ -27,7 +24,6 @@ const HomePages = () => {
       <Appointment />
       <UsualyAsked />
       <Partnert />
-      <Footer />
     </>
   );
 };

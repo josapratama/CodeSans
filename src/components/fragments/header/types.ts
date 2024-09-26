@@ -19,23 +19,23 @@ export const dataNavbar: INavbar[] = [
     },
     {
         id: 3,
-        title: "find-doctor",
+        title: "Find Doctor",
         url: "/find-doctor",
     },
     {
         id: 4,
-        title: "blog",
+        title: "Blog",
         url: "/blog",
     },
     {
         id: 5,
-        title: "pages",
+        title: "Pages",
         url: "/pages",
         isMenu: true
     },
     {
         id: 6,
-        title: "contact",
+        title: "Contact",
         url: "/contact",
     },
 ]
