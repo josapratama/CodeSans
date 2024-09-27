@@ -26,6 +26,11 @@ import professional from "./professional.svg";
 
 // icon departments page
 // ourMedicalDepartmens
+
+// find doctor icon
+import itemsActive from "./itemsActive.svg";
+import items from "./items.svg";
+
 import bell from "./bell.svg";
 export const IconsAll = {
   compassion,
@@ -43,4 +48,6 @@ export const IconsAll = {
   patient,
   professional,
   bell,
+  itemsActive,
+  items,
 };

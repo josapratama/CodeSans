@@ -14,7 +14,7 @@ const Footer = () => {
         <img
           src={ImageHomeFooter.logoFooter}
           alt="Logo footer"
-          className="absolute sm:size-96 size-72 sm:-top-48 -top-20 right-1/2 translate-x-1/2"
+          className="absolute sm:size-96 size-72 sm:-top-32 -top-24 right-1/2 translate-x-1/2"
         />
 
         {/* <div className="flex flex-col md:flex-row items-start justify-around gap-5 lg:gap-[50px] py-36"> */}

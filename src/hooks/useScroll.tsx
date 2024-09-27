@@ -4,7 +4,6 @@ const useScroll = () => {
     const [isScroll, setIsScroll] = useState<number>(0)
     const handleScroll = () => {
         const Y = window.pageYOffset
-        console.log(typeof Y)
         setIsScroll(Y)
     }
     useEffect(() => {
