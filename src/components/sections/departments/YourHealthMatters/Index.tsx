@@ -3,7 +3,7 @@ import SectionTitle from "../../../elements/SectionTitle";
 
 const YourHealthMatters = () => {
   return (
-    <section className="lg:translate-y-[138px] ">
+    <section className="lg:translate-y-[180px] ">
       <div className="container px-4 max-w-7xl lg:px-0">
         <div className="flex flex-col items-center justify-between gap-10 lg:flex-row">
           <div className="w-full lg:w-[40%] h-full mb-10">

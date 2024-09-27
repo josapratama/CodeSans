@@ -3,13 +3,13 @@ import { dataCardOurValues } from "./types";
 const CardOurValues = () => {
   return (
     <>
-      <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 lg:gap-[60px] justify-items-center">
+      <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 lg:gap-[50px] justify-items-center">
         {dataCardOurValues?.slice(0, 3).map((values, index) => (
           <div
             key={values.id}
             className={`rounded-3xl shadow-secondary/10 shadow-xl py-[50px] px-[30px] ${
               index === 1 ? "lg:h-[336px]" : "lg:h-[381px]"
-            } lg:w-[390px] `}
+            } lg:w-[350px] `}
           >
             <div
               className={`flex items-center justify-center gap-4 mb-[34px] ${
@@ -28,11 +28,11 @@ const CardOurValues = () => {
             <p className="text-sm text-center lg:text-base font-Poppins">{values.description}</p>
           </div>
         ))}
-        <div className="lg:flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-3 gap-[60px]">
+        <div className="lg:flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-3 gap-[50px]">
           {dataCardOurValues?.slice(3).map((values) => (
             <div
               key={values.id}
-              className="lg:w-[390px] h-[355px] rounded-3xl shadow-xl shadow-secondary/10 py-[50px] px-[30px]"
+              className="lg:w-[350px]  h-[355px] rounded-3xl shadow-xl shadow-secondary/10 py-[50px] px-[30px]"
             >
               <div className="flex items-center justify-center gap-4 mb-[34px] mt-[45px]">
                 <img

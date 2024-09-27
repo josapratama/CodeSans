@@ -32,7 +32,7 @@ const HeroBanner = () => {
             <img
               src={ImageDepartmentsHeroBanner.bannerPerson}
               alt="Person"
-              className="w-full h-full "
+              className="w-full h-full"
             />
           </div>
         </div>

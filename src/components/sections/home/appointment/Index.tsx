@@ -210,7 +210,7 @@ const Appointment = () => {
             <img
               src={ImageHomeAppointment.layerAppointment}
               alt="Appointment"
-              className="absolute lg:-right-[60px] right-0"
+              className="absolute right-0"
             />
           </div>
         </div>
