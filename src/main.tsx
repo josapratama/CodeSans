@@ -9,6 +9,7 @@ import GalleryPages from "./pages/GalleryPages.tsx";
 import AboutPages from "./pages/AboutPages.tsx";
 import DepartmentsPages from "./pages/DepartmentsPages.tsx";
 import FindDoctorPages from "./pages/FindDoctorPages.tsx";
+import BlogPages from "./pages/BlogPages.tsx";
 import MainLayout from "./components/Mainlayouts.tsx";
 import ContactUsPages from "./pages/ContactUsPages.tsx";
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "/departments", element: <DepartmentsPages /> },
       { path: "/about", element: <AboutPages /> },
       { path: "/find-doctor", element: <FindDoctorPages /> },
+      { path: "/blog", element: <BlogPages /> },
       { path: "/contact-us", element: <ContactUsPages /> },
     ],
   },
