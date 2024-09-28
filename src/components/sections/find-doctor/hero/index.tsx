@@ -14,7 +14,7 @@ const HeroBanner = () => {
         className="absolute top-0 right-0 w-full h-full "
       />
       <div className="container pt-4 max-w-7xl lg:px-0">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start mx-4">
+        <div className="flex flex-col items-center justify-center mx-4 lg:flex-row lg:justify-start">
           <div className="flex flex-col sm:gap-6 gap-4 -translate-y-10 w-full lg:w-[50%]">
             <SectionTitle classname="leading-tight">
               Introduce You to

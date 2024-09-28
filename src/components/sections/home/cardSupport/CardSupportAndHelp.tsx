@@ -6,6 +6,7 @@ const CardSupportAndHelp = () => {
     <>
       {dataCardSupportAndHelp?.map((values) => (
         <div
+        data-aos="zoom-in-up"
           key={values.id}
           className="grid grid-cols-3 gap-6 place-items-center"
         >

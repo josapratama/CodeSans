@@ -5,7 +5,7 @@ import CardLatestUpdate from "./CardLatestUpdate";
 const LatestUpdate = () => {
   return (
     <section className="pt-[35px] pb-5">
-      <div className="container px-4 max-w-7xl lg:px-0">
+      <div className="container px-4 overflow-hidden max-w-7xl lg:px-0">
         <div className="text-center mb-[105px]">
             <SectionSubTitle>BLOG POST</SectionSubTitle>
             <SectionTitle>Latest Update</SectionTitle>

@@ -36,6 +36,6 @@ export const dataNavbar: INavbar[] = [
     {
         id: 6,
         title: "Contact",
-        url: "/contact",
+        url: "/contact-us",
     },
 ]

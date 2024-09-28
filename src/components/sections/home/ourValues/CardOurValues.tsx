@@ -6,6 +6,7 @@ const CardOurValues = () => {
       <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 lg:gap-[50px] justify-items-center">
         {dataCardOurValues?.slice(0, 3).map((values, index) => (
           <div
+            data-aos="zoom-in-up"
             key={values.id}
             className={`rounded-3xl shadow-secondary/10 shadow-xl py-[50px] px-[30px] ${
               index === 1 ? "lg:h-[336px]" : "lg:h-[381px]"
@@ -25,12 +26,15 @@ const CardOurValues = () => {
                 {values.title}
               </h3>
             </div>
-            <p className="text-sm text-center lg:text-base font-Poppins">{values.description}</p>
+            <p className="text-sm text-center lg:text-base font-Poppins">
+              {values.description}
+            </p>
           </div>
         ))}
         <div className="lg:flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-3 gap-[50px]">
           {dataCardOurValues?.slice(3).map((values) => (
             <div
+              data-aos="zoom-in-up"
               key={values.id}
               className="lg:w-[350px]  h-[355px] rounded-3xl shadow-xl shadow-secondary/10 py-[50px] px-[30px]"
             >
