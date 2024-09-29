@@ -11,11 +11,11 @@ const HeroBanner = () => {
       <div className="container px-4 max-w-7xl lg:px-0">
         <div className="flex flex-col items-center lg:flex-row">
           <div className="w-full lg:w-1/2">
-            <SectionTitle classname="mb-6">Contact Us</SectionTitle>
-            <p className="text-xl font-Poppins text-primary">Kindly reach us to get the fastest response and treatment</p>
+            <SectionTitle dataAos="fade-right" classname="mb-6">Contact Us</SectionTitle>
+            <p data-aos="fade-right" className="text-xl font-Poppins text-primary">Kindly reach us to get the fastest response and treatment</p>
           </div>
           <div className="w-full lg:w-1/2">
-            <img src={ImageContactUsHero.bannerContactUsPerson} alt="" className="translate-y-20" />
+            <img data-aos="fade-left" src={ImageContactUsHero.bannerContactUsPerson} alt="" className="translate-y-20" />
           </div>
         </div>
       </div>

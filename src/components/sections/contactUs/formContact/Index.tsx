@@ -3,10 +3,11 @@ import Button from "../../../elements/Button";
 const FormContact = () => {
   return (
     <section className="-translate-y-10 lg:-translate-y-28">
-      <div className="container max-w-5xl px-4 lg:px-0">
+      <div className="container max-w-5xl px-4 overflow-hidden lg:px-0">
         <form className="lg:py-[84px] py-10 lg:px-[220px] px-5 md:py-16 md:px-16 bg-third rounded-3xl">
           <div className="grid w-full grid-cols-2">
             <label
+            data-aos="fade-right"
               htmlFor=""
               className="px-3 pb-6 text-base font-Poppins text-primary"
             >
@@ -18,6 +19,7 @@ const FormContact = () => {
               />
             </label>
             <label
+            data-aos="fade-left"
               htmlFor=""
               className="px-3 pb-6 text-base font-Poppins text-primary"
             >
@@ -30,6 +32,7 @@ const FormContact = () => {
             </label>
           </div>
           <label
+          data-aos="zoom-in-up"
             htmlFor=""
             className="block px-3 pb-6 text-basefont-Poppins text-primary"
           >
@@ -41,6 +44,7 @@ const FormContact = () => {
             />
           </label>
           <label
+          data-aos="zoom-in-up"
             htmlFor=""
             className="block px-3 pb-6 text-basefont-Poppins text-primary"
           >
