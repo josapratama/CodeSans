@@ -14,13 +14,7 @@ const Footer = () => {
         <img
           src={ImageHomeFooter.logoFooter}
           alt="Logo footer"
-<<<<<<< HEAD
-          className="absolute sm:size-96 size-72 sm:-top-32 -top-24 right-1/2 translate-x-1/2"
-=======
-          className="absolute translate-x-1/2 sm:size-96 size-72 sm:-top-48 -top-20 right-1/2"
->>>>>>> beb0fcd0d6e6f9649da92bcd61f713ce746991b3
-        />
-
+          className="absolute sm:size-96 size-72 sm:-top-32 -top-24 right-1/2 translate-x-1/2"/>
         {/* <div className="flex flex-col md:flex-row items-start justify-around gap-5 lg:gap-[50px] py-36"> */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] md:py-36 py-20 md:px-20 sm:px-10 px-5 md:gap-10 gap-6 ">
           <div>

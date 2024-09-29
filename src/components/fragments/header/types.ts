@@ -20,7 +20,7 @@ export const dataNavbar: INavbar[] = [
     {
         id: 3,
         title: "Find Doctor",
-        url: "/find-doctor",
+        url: "/doctor",
     },
     {
         id: 4,
