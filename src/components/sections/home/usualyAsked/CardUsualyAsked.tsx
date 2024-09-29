@@ -12,7 +12,6 @@ import { Fragment } from "react/jsx-runtime";
 const CardUsualyAsked = () => {
   const { usualyAsked } = useHomeSelector();
   const dispatch = useDispatch<AppDispatch>();
-  console.log({ usualyAsked });
 
   return (
     <>

@@ -10,7 +10,6 @@ import { doctors } from "../../find-doctor/type";
 const Header = () => {
   const { id } = useParams()
   const doctorDetail = doctors.find((value) => value.id == parseInt(id as string));
-  console.log(doctorDetail)
 
   return (
     <section className="container bg-third relative sm:h-[1000px] h-[1650px] my-5">
