@@ -27,7 +27,10 @@ const Header = () => {
 
   const url = ["", "departments", "blog", "detail"];
 
-  const urlBgWhite = url.includes(router.pathname.split("/")[2 || 1]);
+  const urlBgWhite = url.includes(
+    router.pathname.split("/")[2] || router.pathname.split("/")[1]
+  );
+  // const urlBgWhite = url.includes(router.pathname.split("/")[2 || 1]);
 
   return (
     <header

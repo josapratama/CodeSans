@@ -31,8 +31,19 @@ import professional from "./professional.svg";
 import itemsActive from "./itemsActive.svg";
 import items from "./items.svg";
 
+// detail departments pages
+// treatments
+import vaccinations from "./vaccinations.svg";
+import management from "./management.svg";
+import treatment from "./treatment.svg";
+import developmental from "./developmental.svg";
+
 import bell from "./bell.svg";
 export const IconsAll = {
+  vaccinations,
+  management,
+  treatment,
+  developmental,
   compassion,
   excellence,
   integrity,

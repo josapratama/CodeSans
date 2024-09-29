@@ -14,6 +14,7 @@ import MainLayout from "./components/Mainlayouts.tsx";
 import DetailDoctorPages from "./pages/DetailDoctorPages.tsx";
 import ContactUsPages from "./pages/ContactUsPages.tsx";
 import PricingPlanPages from "./pages/PricingPlanPages.tsx";
+import DetailDepartmentsPages from "./pages/DetailDepartmentsPages.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePages /> },
       { path: "/gallery", element: <GalleryPages /> },
       { path: "/departments", element: <DepartmentsPages /> },
+      {path: "/departments/detail/:id", element: <DetailDepartmentsPages />},
       { path: "/pricing-plan", element: <PricingPlanPages /> },
       { path: "/about", element: <AboutPages /> },
       { path: "/doctor", element: <FindDoctorPages /> },

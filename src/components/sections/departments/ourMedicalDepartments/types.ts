@@ -1,10 +1,13 @@
+//
 import { IconsAll } from "../../../../assets/icons";
+import { Doctor, doctors } from "../../find-doctor/type";
 
-interface CardOurMedicalDepartments {
+export interface CardOurMedicalDepartments {
   id: number | string;
   title: string;
   icon: string;
   description: string;
+  avaliableDoctor: Doctor[];
 }
 
 export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
@@ -14,6 +17,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[0], doctors[1]],
   },
   {
     id: 2,
@@ -21,6 +25,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[4], doctors[5]],
   },
   {
     id: 3,
@@ -28,6 +33,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[3], doctors[4]],
   },
   {
     id: 4,
@@ -35,6 +41,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[11], doctors[2]],
   },
   {
     id: 5,
@@ -42,6 +49,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[8], doctors[10]],
   },
   {
     id: 6,
@@ -49,6 +57,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[13], doctors[14]],
   },
   {
     id: 7,
@@ -56,6 +65,7 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[18], doctors[19]],
   },
   {
     id: 8,
@@ -63,5 +73,6 @@ export const dataCardOurMedicalDepartments: CardOurMedicalDepartments[] = [
     icon: IconsAll.bell,
     description:
       "This department provides immediate medical care to patients with acute illnesses or injuries that require immediate attention.",
+    avaliableDoctor: [doctors[15], doctors[16]],
   },
 ];
