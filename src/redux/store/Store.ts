@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import StoreHome from "../combine/storeHome";
+import StorePricingPlan from "../combine/storePricingPlan";
 
 const store = configureStore({
     reducer: {
-        home: StoreHome
+        home: StoreHome,
+        pricingPlan: StorePricingPlan
     }
 })
 

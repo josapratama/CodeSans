@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
             <div className="container px-4 max-w-7xl lg:px-0">
                 <div className="flex">
                     <div className="w-[40%] hidden md:block">
-                        <img src={ImageAboutWhyChooseUs.bannerAbout} alt="About" />
+                        <img data-aos="fade-right" src={ImageAboutWhyChooseUs.bannerAbout} alt="About" />
                     </div>
                     <div className="md:w-[60%] w-full">
                         <SectionTitle classname="mb-12 text-center md:text-start" >Why Choose Us</SectionTitle>

@@ -3,7 +3,7 @@ import { ImageGalleryHome } from "../../../../assets/images/gallery/Index";
 const HeroBanner = () => {
   return (
     <div
-      className="relative pt-32 mb-[50px] bg-center bg-no-repeat bg-cover"
+      className="relative pt-32 mb-[55px] bg-center bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${ImageGalleryHome.layerGallery})` }}
     >
       <img
@@ -11,11 +11,12 @@ const HeroBanner = () => {
         alt="mask"
         className="absolute top-0 right-0 w-full h-full"
       />
-      <div className="container px-4 max-w-7xl lg:px-0">
+      <div className="container px-4 overflow-hidden max-w-7xl lg:px-0">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[70px]">
           <div className="w-full lg:w-[50%]">
             <img
-            data-aos="fade-right"
+              data-aos="fade-right"
+              data-aos-once="true"
               src={ImageGalleryHome.bannerGalleryPerson}
               alt="Person"
               className="w-full h-full"

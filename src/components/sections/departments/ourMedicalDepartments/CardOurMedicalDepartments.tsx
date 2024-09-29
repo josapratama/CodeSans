@@ -7,6 +7,7 @@ const CardOurMedicalDepartments = () => {
     <>
       {dataCardOurMedicalDepartments?.map((values, index) => (
         <div
+        data-aos="zoom-in"
           key={values.id}
           className={`rounded-2xl pl-[34px] pr-[50px] relative py-[49px] shadow-lg shadow-secondary/10 bg-third overflow-hidden flex gap-6 items-start justify-start ${index === 6 ? "lg:col-start-2": ""}`}
         >

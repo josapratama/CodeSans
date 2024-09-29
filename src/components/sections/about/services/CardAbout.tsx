@@ -6,7 +6,7 @@ const CardAbout = () => {
   return (
     <>
       {dataCardAbout?.map((values) => (
-        <div key={values.id} className="py-[30px] px-6 shadow-lg relative shadow-secondary/10 rounded-2xl overflow-hidden">
+        <div data-aos="zoom-in-up" key={values.id} className="py-[30px] px-6 shadow-lg relative shadow-secondary/10 rounded-2xl overflow-hidden">
           <div className="flex items-center justify-center w-10 h-10 mb-5 rounded-full bg-secondary">
             <values.icon className="w-full h-full p-2 text-third" />
           </div>

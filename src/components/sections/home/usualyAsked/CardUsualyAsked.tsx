@@ -7,6 +7,7 @@ import useHomeSelector from "../../../../hooks/useHomeSelector";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../../redux/store/Store";
 import { handleIsOpen } from "../../../../redux/slice/home/usualyAskedFeatures";
+import { Fragment } from "react/jsx-runtime";
 
 const CardUsualyAsked = () => {
   const { usualyAsked } = useHomeSelector();
@@ -16,10 +17,9 @@ const CardUsualyAsked = () => {
   return (
     <>
       {dataCardUsualyAsked?.map((values) => (
-        <>
+        <Fragment key={values.id}>
           <button
-            data-aos="fade-down"
-            key={values.id}
+            {...(!usualyAsked.isOpen[values.id] && { "data-aos": "fade-down" })}
             className={`relative flex items-center justify-between border-secondary/20 py-4 px-[30px] ${
               usualyAsked.isOpen[values.id]
                 ? "bg-[#D2EAEF] rounded-t-2xl border-none ml-10"
@@ -41,7 +41,7 @@ const CardUsualyAsked = () => {
               {values.description}
             </p>
           ) : null}
-        </>
+        </Fragment>
       ))}
     </>
   );

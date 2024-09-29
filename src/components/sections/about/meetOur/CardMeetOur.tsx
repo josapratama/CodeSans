@@ -7,6 +7,7 @@ const CardMeetOur = () => {
     <>
       {dataCardMeetOur?.map((values) => (
         <div
+        data-aos="flip-right"
           key={values.id}
           className="flex flex-col items-center justify-center px-16 text-center shadow-2xl pb-[70px] rounded-2xl shadow-secondary/20"
         >

@@ -55,11 +55,12 @@ const Header = () => {
                   <Link to={values.url}>{values.title}</Link>
                   {isOpen && values.isMenu ? (
                     <div
-                      className="absolute flex flex-col px-4 py-5 rounded bg-third -right-12 top-6 sm:border-none border border-primary z-50"
+                      className="absolute z-50 flex flex-col px-4 py-5 border rounded bg-third -right-12 top-6 sm:border-none border-primary"
                       onMouseLeave={() => handleIsOpen(false)}
                     >
                       <Link to="/gallery">Gallery</Link>
                       <Link to="/departments">Departments</Link>
+                      <Link to="/pricing-plan">Pricing Plan</Link>
                     </div>
                   ) : null}
                 </li>
@@ -71,15 +72,15 @@ const Header = () => {
             )}
           </ul>
           <div className="flex items-center gap-4 text-primary">
-            <CiSearch className="size-5 font-semibold" />
+            <CiSearch className="font-semibold size-5" />
             <button
               className="block transition-global sm:hidden"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               {navbarOpen ? (
-                <RxCross2 className="size-5 font-semibold" />
+                <RxCross2 className="font-semibold size-5" />
               ) : (
-                <HiOutlineMenu className="size-5 font-semibold" />
+                <HiOutlineMenu className="font-semibold size-5" />
               )}
             </button>
           </div>
