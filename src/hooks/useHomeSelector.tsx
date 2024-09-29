@@ -2,9 +2,10 @@ import { useSelector } from "react-redux"
 import {RootState} from "../redux/store/Store.ts"
 
 const useHomeSelector = () => {
-    const selector = useSelector((state: RootState) => state.home)
+    const selector = useSelector((state: RootState) => state)
   return {
-    usualyAsked: selector.UsualyAsked
+    usualyAsked: selector.home.UsualyAsked,
+    questions: selector.pricingPlan.questions
   }
 }
 

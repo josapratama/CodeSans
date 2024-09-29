@@ -21,6 +21,6 @@ const CloseSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default CloseSection
+export default CloseSection;

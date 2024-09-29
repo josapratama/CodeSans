@@ -10,18 +10,18 @@ const Footer = () => {
       className="relative sm:pt-[165px] pt-32 sm:mt-0 mt-16 bg-cover h-auto w-full bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${ImageHomeFooter.layerFooter})` }}
     >
-      <div className="container px-4 max-w-7xl lg:px-0">
+      <div className="container px-4 overflow-hidden max-w-7xl lg:px-0">
         <img
           src={ImageHomeFooter.logoFooter}
           alt="Logo footer"
-          className="absolute sm:size-96 size-72 sm:-top-32 -top-24 right-1/2 translate-x-1/2"/>
-        {/* <div className="flex flex-col md:flex-row items-start justify-around gap-5 lg:gap-[50px] py-36"> */}
+          className="absolute translate-x-1/2 sm:size-96 size-72 sm:-top-48 -top-20 right-1/2"
+        />
         <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] md:py-36 py-20 md:px-20 sm:px-10 px-5 md:gap-10 gap-6 ">
           <div>
             <h2 className="lg:mb-[63px] mb-[30px]">CodeSans health</h2>
             <ul className="flex flex-col gap-y-[13px]">
               {listFooterOne?.map((values) => (
-                <li key={values.id} className="flex items-center gap-x-[19px]">
+                <li data-aos="fade-down" key={values.id} className="flex items-center gap-x-[19px]">
                   <p className="p-2 text-sm rounded-full bg-secondary">
                     <values.icon className=" text-third" />
                   </p>
@@ -39,6 +39,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-5">
               {listFooterTwo?.map((values) => (
                 <li
+                data-aos="fade-down"
                   key={values.id}
                   className="text-sm lg:text-base text-primary font-Poppins"
                 >
@@ -51,6 +52,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-5">
               {listFooterThree?.map((values) => (
                 <li
+                data-aos="fade-down"
                   key={values.id}
                   className="text-sm lg:text-base text-primary font-Poppins"
                 >
@@ -60,13 +62,13 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl lg:text-[30px] font-bold text-primary mb-3">
+            <h3 data-aos="fade-left" className="text-xl lg:text-[30px] font-bold text-primary mb-3">
               Be Our Subscribers
             </h3>
-            <p className="text-sm lg:text-base mb-7 font-Poppins text-primary">
+            <p data-aos="fade-left" className="text-sm lg:text-base mb-7 font-Poppins text-primary">
               To get the latest news about health from our experts
             </p>
-            <div className="py-[18px] ps-5 border flex items-center rounded-full relative h-[60px] border-primary/50">
+            <div data-aos="zoom-in-up" className="py-[18px] ps-5 border flex items-center rounded-full relative h-[60px] border-primary/50">
               <input
                 type="text"
                 className="text-base bg-transparent outline-none text-primary/50 font-Poppins"

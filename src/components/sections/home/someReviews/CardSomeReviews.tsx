@@ -10,8 +10,8 @@ const CardSomeReviews = () => {
             index % 2 === 1 ? "md:ml-[110px] bg-third" : ""
           }`}
         >
-          <img src={values.avatar} alt={values.name} />
-          <div>
+          <img data-aos="fade-right" src={values.avatar} alt={values.name} />
+          <div data-aos='fade-right'>
             <h3 className="text-xl font-semibold text-primary">
               {values.name}
             </h3>

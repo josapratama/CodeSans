@@ -15,17 +15,18 @@ const AboutUs = () => {
           />
           <div>
             <img
+              data-aos="fade-right"
               src={ImageHomeAboutUs.bannerAbout}
               alt="About us"
               className=""
             />
           </div>
           <div className="lg:mt-[125px] flex flex-col gap-[72px]">
-            <div>
+            <div data-aos="zoom-in-up">
               <SectionTitle>About Us</SectionTitle>
               <SectionSubTitle>PRO HEALTH</SectionSubTitle>
             </div>
-            <div className="flex gap-2">
+            <div data-aos="zoom-in-up" className="flex gap-2">
               <div>
                 <HiArrowRight className="w-[36px] h-[26px] text-primary" />
               </div>

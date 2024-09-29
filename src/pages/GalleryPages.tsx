@@ -1,4 +1,4 @@
-import HeroBanner from "../components/sections/gallery/home/Index"
+import HeroBanner from "../components/sections/gallery/hero/Index"
 import InspectionDoctor from "../components/sections/gallery/inspection/Index"
 import WellnessAtTheForefront from "../components/sections/gallery/WellnessAtTheForefront/Index"
 

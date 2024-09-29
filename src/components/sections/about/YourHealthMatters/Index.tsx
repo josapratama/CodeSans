@@ -10,10 +10,13 @@ const YourHealthMatters = () => {
         }}
       >
         <div className="flex flex-col items-center justify-start h-full gap-3 py-40 text-center">
-          <h2 className="text-[52px] text-third font-bold leading-[60px]">
+          <h2
+            data-aos="fade-up"
+            className="lg:text-[52px] md:text-4xl sm:text-2xl text-third font-bold leading-[60px]"
+          >
             Dont't Let Your Health <br /> Take a Backseat!
           </h2>
-          <p className="text-xl font-Poppins text-third">
+          <p data-aos="fade-up" className="text-sm lg:text-xl font-Poppins text-third">
             Schedule an appointment with one of our experienced <br />
             medical professionals today
           </p>

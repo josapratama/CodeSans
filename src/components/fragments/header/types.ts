@@ -30,12 +30,12 @@ export const dataNavbar: INavbar[] = [
     {
         id: 5,
         title: "Pages",
-        url: "/pages",
+        url: "/",
         isMenu: true
     },
     {
         id: 6,
         title: "Contact",
-        url: "/contact",
+        url: "/contact-us",
     },
 ]

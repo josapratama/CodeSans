@@ -5,7 +5,7 @@ import CardUsualyAsked from "./CardUsualyAsked";
 const UsualyAsked = () => {
   return (
     <section className="pb-[75px] pt-[50px]">
-      <div className="container max-w-3xl">
+      <div className="container max-w-3xl overflow-hidden">
         <div className="mb-[70px] text-center">
             
           <SectionSubTitle>WHAT PEOPLE</SectionSubTitle>

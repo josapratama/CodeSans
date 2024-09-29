@@ -5,6 +5,7 @@ const CardDepartmentsOne = () => {
     <>
       {dataCardDepartmentsOne?.map((values) => (
         <div
+        data-aos="zoom-in-up"
           key={values.id}
           className="flex flex-col w-[100px] lg:w-[220px] h-[100px] md:w-[120px] md:h-[120px] lg:h-[290px] items-center justify-center bg-third py-[68px] rounded-xl px-[30px]"
         >

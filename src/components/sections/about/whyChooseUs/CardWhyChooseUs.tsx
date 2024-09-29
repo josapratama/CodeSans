@@ -4,7 +4,7 @@ const CardWhyChooseUs = () => {
   return (
     <>
       {dataCardWhyChooseUs?.map((values) => (
-        <div key={values.id} className="px-3 pb-10">
+        <div data-aos="zoom-in-up" key={values.id} className="px-3 pb-10">
           <div className="flex items-center justify-center mb-5 rounded-full w-7 h-7 bg-secondary">
             <img src={values.icon} alt={values.title} className="w-full h-full p-1.5" />
           </div>
