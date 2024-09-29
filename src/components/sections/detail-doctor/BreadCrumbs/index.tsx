@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 const BreadCrumbs = () => {
   const { pathname } = useLocation();
 
-  let breadName = pathname.split("/").slice(0, -1);
+  const breadName = pathname.split("/").slice(0, -1);
   breadName[0] = "Home"
   const pathName = breadName
     .map((name) =>name.charAt(0).toUpperCase() + name.slice(1))
