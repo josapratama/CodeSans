@@ -9,6 +9,7 @@ import GalleryPages from "./pages/GalleryPages.tsx";
 import AboutPages from "./pages/AboutPages.tsx";
 import DepartmentsPages from "./pages/DepartmentsPages.tsx";
 import FindDoctorPages from "./pages/FindDoctorPages.tsx";
+import BlogPages from "./pages/BlogPages.tsx";
 import MainLayout from "./components/Mainlayouts.tsx";
 import ContactUsPages from "./pages/ContactUsPages.tsx";
 import PricingPlanPages from "./pages/PricingPlanPages.tsx";
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/pricing-plan", element: <PricingPlanPages /> },
       { path: "/about", element: <AboutPages /> },
       { path: "/find-doctor", element: <FindDoctorPages /> },
+      { path: "/blog", element: <BlogPages /> },
       { path: "/contact-us", element: <ContactUsPages /> },
     ],
   },
