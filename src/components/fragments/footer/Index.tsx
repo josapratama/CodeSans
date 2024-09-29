@@ -16,7 +16,6 @@ const Footer = () => {
           alt="Logo footer"
           className="absolute translate-x-1/2 sm:size-96 size-72 sm:-top-48 -top-20 right-1/2"
         />
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] md:py-36 py-20 md:px-20 sm:px-10 px-5 md:gap-10 gap-6 ">
           <div>
             <h2 className="lg:mb-[63px] mb-[30px]">CodeSans health</h2>

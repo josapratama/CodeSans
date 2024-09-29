@@ -1,6 +1,7 @@
 import DoctorImages from "../../../assets/images/findDoctor";
 
 export type Doctor = {
+  id: number;
   name: string;
   role: string;
   description: string;
@@ -15,6 +16,7 @@ export type Doctor = {
 
 export const doctors: Doctor[] = [
   {
+    id: 1,
     name: "Dr. Alice Johnson",
     role: "Emergency Medicine Physician",
     description:
@@ -36,6 +38,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 2,
     name: "Dr. Benjamin Smith",
     role: "Emergency Medicine Physician",
     description: "Expert in neurological disorders and brain health.",
@@ -56,6 +59,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 3,
     name: "Dr. Catherine Davis",
     role: "Emergency Medicine Physician",
     description:
@@ -77,6 +81,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 4,
     name: "Dr. Daniel Brown",
     role: "Pediatric Department",
     description:
@@ -98,6 +103,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 5,
     name: "Dr. Evelyn Green",
     role: "Pediatric Department",
     description: "Specialist in children's health and pediatric care.",
@@ -118,8 +124,9 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 6,
     name: "Dr. Frank Harris",
-    role: "Emergency Medicine  Physician",
+    role: "Emergency Medicine Physician",
     description: "Leading oncologist with expertise in cancer treatment.",
     image: DoctorImages.jhon,
     contactInfo: {
@@ -138,6 +145,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 7,
     name: "Dr. Grace Williams",
     role: "Emergency Medicine Physician",
     description:
@@ -159,6 +167,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 8,
     name: "Dr. Henry White",
     role: "Pediatric Department",
     description:
@@ -180,6 +189,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 9,
     name: "Dr. Ivy Martinez",
     role: "Psychiatry Department",
     description:
@@ -201,6 +211,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 10,
     name: "Dr. Jack Thompson",
     role: "Emergency Medicine Physician",
     description:
@@ -222,6 +233,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 11,
     name: "Dr. Karen Lewis",
     role: "Psychiatry Department",
     description:
@@ -243,8 +255,9 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 12,
     name: "Dr. Liam Scott",
-    role: "Emergency Medicine  Physician",
+    role: "Emergency Medicine Physician",
     description:
       "Expert in hormone-related diseases such as diabetes and thyroid disorders.",
     image: DoctorImages.michelle,
@@ -264,6 +277,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 13,
     name: "Dr. Mia Robinson",
     role: "Psychiatry Department",
     description:
@@ -285,6 +299,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 14,
     name: "Dr. Noah Carter",
     role: "Gastroenterologist",
     description: "Experienced gastroenterologist focusing on digestive health.",
@@ -305,8 +320,9 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 15,
     name: "Dr. Olivia Adams",
-    role: "Emergency Medicine  Physician",
+    role: "Emergency Medicine Physician",
     description:
       "Expert in the immune system, focusing on allergies and autoimmune diseases.",
     image: DoctorImages.jhon,
@@ -326,6 +342,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 16,
     name: "Dr. Patrick James",
     role: "Psychiatry Department",
     description:
@@ -347,6 +364,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 17,
     name: "Dr. Quentin Bell",
     role: "Psychiatry Department",
     description:
@@ -368,6 +386,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 18,
     name: "Dr. Rachel Clark",
     role: "Pediatric Department",
     description: "Specialist in blood diseases, including anemia and leukemia.",
@@ -388,8 +407,9 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 19,
     name: "Dr. Samuel Edwards",
-    role: "Emergency Medicine  Physician",
+    role: "Emergency Medicine Physician",
     description:
       "Expert in urinary tract and male reproductive system diseases.",
     image: DoctorImages.michelle,
@@ -409,6 +429,7 @@ export const doctors: Doctor[] = [
     ],
   },
   {
+    id: 20,
     name: "Dr. Tina Walker",
     role: "Emergency Medicine Physician",
     description:

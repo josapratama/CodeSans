@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./fragments/header/Index"; 
 import Footer from "./fragments/footer/Index";
 import "aos/dist/aos.css"
-import Aos from "aos"
+import Aos from "aos"; 
 
 import { useEffect } from "react";
 

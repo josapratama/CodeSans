@@ -10,6 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
   const router = useLocation();
+  const scroll = useScroll()
 
   const handleIsOpen = (condition: boolean) => {
     setIsOpen(condition);
@@ -20,11 +21,14 @@ const Header = () => {
     setNavbarOpen(false);
   }, [router.pathname]);
 
-  const url = ["", "departments", "blog", "doctor-detail"];
+  useEffect(() => {
+    setNavbarOpen(false)
+  },[scroll])
 
-  const urlBgWhite = url.includes(router.pathname.split("/")[1]);
+  const url = ["", "departments", "blog", "detail"];
 
-  const scroll = useScroll()
+  const urlBgWhite = url.includes(router.pathname.split("/")[2 || 1])
+
 
   return (
     <header
