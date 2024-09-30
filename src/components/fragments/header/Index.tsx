@@ -67,11 +67,12 @@ const Header = () => {
                       <Link to="/gallery">Gallery</Link>
                       <Link to="/departments">Departments</Link>
                       <Link to="/pricing-plan">Pricing Plan</Link>
+                      <Link to="/appointment">Appointment</Link>
                     </div>
                   ) : null}
                 </li>
               ) : (
-                <li key={values.id} className="relative"> 
+                <li key={values.id} className="relative">
                   <Link to={values.url}>{values.title}</Link>
                 </li>
               )

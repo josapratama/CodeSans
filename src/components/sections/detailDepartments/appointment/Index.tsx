@@ -16,7 +16,7 @@ const Appointment = () => {
               <SectionTitle>Appointment</SectionTitle>
             </div>
             <form className="w-full ">
-              <div className="flex flex-col w-full ">
+              <div className="flex flex-col w-full lg:flex-row ">
                 <label
                   data-aos="fade-right"
                   htmlFor="name"

@@ -1,20 +1,21 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
-import HomePages from "./pages/HomePages.tsx";
 import { Provider } from "react-redux";
-import store from "./redux/store/Store.ts";
-import GalleryPages from "./pages/GalleryPages.tsx";
-import AboutPages from "./pages/AboutPages.tsx";
-import DepartmentsPages from "./pages/DepartmentsPages.tsx";
-import FindDoctorPages from "./pages/FindDoctorPages.tsx";
-import BlogPages from "./pages/BlogPages.tsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./components/Mainlayouts.tsx";
-import DetailDoctorPages from "./pages/DetailDoctorPages.tsx";
+import "./index.css";
+import AboutPages from "./pages/AboutPages.tsx";
+import BlogPages from "./pages/BlogPages.tsx";
 import ContactUsPages from "./pages/ContactUsPages.tsx";
-import PricingPlanPages from "./pages/PricingPlanPages.tsx";
+import DepartmentsPages from "./pages/DepartmentsPages.tsx";
 import DetailDepartmentsPages from "./pages/DetailDepartmentsPages.tsx";
+import DetailDoctorPages from "./pages/DetailDoctorPages.tsx";
+import FindDoctorPages from "./pages/FindDoctorPages.tsx";
+import GalleryPages from "./pages/GalleryPages.tsx";
+import HomePages from "./pages/HomePages.tsx";
+import PricingPlanPages from "./pages/PricingPlanPages.tsx";
+import store from "./redux/store/Store.ts";
+import AppointmentPages from "./pages/AppointmentPages.tsx";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePages /> },
       { path: "/gallery", element: <GalleryPages /> },
       { path: "/departments", element: <DepartmentsPages /> },
-      {path: "/departments/detail/:id", element: <DetailDepartmentsPages />},
+      { path: "/departments/detail/:id", element: <DetailDepartmentsPages /> },
       { path: "/pricing-plan", element: <PricingPlanPages /> },
       { path: "/about", element: <AboutPages /> },
       { path: "/doctor", element: <FindDoctorPages /> },
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       { path: "/find-doctor", element: <FindDoctorPages /> },
       { path: "/blog", element: <BlogPages /> },
       { path: "/contact-us", element: <ContactUsPages /> },
+      {path: "/appointment", element: <AppointmentPages />}
     ],
   },
 ]);
