@@ -3,13 +3,14 @@ import { Card } from "../components/card";
 import { Button } from "../components/button";
 import { psychologyData } from "../data";
 import { DontLetYourHealth } from "../dontLet";
+import { Link } from "react-router-dom";
 
 export const Psychology = () => {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-24 mb-8 lg:mt-24 sm:mb-12 lg:mb-16">
         <p data-aos="fade-right" data-aos-once="true" className="font-normal text-sm sm:text-base text-[#274760]/[.52] mb-2">
-          Home / Blog
+          <Link className="hover:text-secondary " to="/">Home</Link> / <Link className="hover:text-secondary " to="/blog">Blog</Link>
         </p>
         <h2 data-aos="fade-right" data-aos-once="true" className="text-2xl font-bold sm:text-3xl lg:text-4xl xl:text-5xl text-primary">
           Psychology and Life Style

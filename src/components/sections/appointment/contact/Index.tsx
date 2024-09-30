@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section className="pt-[55px] mb-[200px] pb-[55px]">
       <div className="container px-4 overflow-hidden max-w-7xl lg:px-0">
-        <div className="flex flex-col lg:flex-row gap-x-[110px]">
+        <div className="flex flex-col lg:flex-row gap-y-[50px] gap-x-[110px]">
           <form className="flex-col flex-1 w-full">
             <h2 className="px-3 pb-6 text-[30px] font-medium text-primary">
               Appointment
