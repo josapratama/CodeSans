@@ -58,10 +58,10 @@ const Header = () => {
                   onMouseEnter={() => handleIsOpen(true)}
                   onMouseLeave={() => handleIsOpen(false)}
                 >
-                  <Link to={values.url}>{values.title}</Link>
+                  <span className="cursor-pointer">{values.title}</span>
                   {isOpen && values.isMenu ? (
                     <div
-                      className="absolute z-50 flex flex-col px-4 py-5 border rounded bg-third -right-12 top-6 sm:border-none border-primary"
+                      className="absolute z-50 flex flex-col gap-3 px-4 py-5 border rounded bg-third -right-12 top-6 sm:border-none border-primary"
                       onMouseLeave={() => handleIsOpen(false)}
                     >
                       <Link to="/gallery">Gallery</Link>
@@ -71,7 +71,7 @@ const Header = () => {
                   ) : null}
                 </li>
               ) : (
-                <li key={values.id} className="relative">
+                <li key={values.id} className="relative"> 
                   <Link to={values.url}>{values.title}</Link>
                 </li>
               )

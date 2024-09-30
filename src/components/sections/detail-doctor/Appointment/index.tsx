@@ -8,7 +8,7 @@ import SectionTitle from "../../../elements/SectionTitle";
 const Appointment = () => {
   return (
     <section style={{ backgroundImage: `url(${ImageDoctorDetail.bg})` }} className="pt-5 sm:mx-16 mx-4 pb-[50px]">
-      <div className="container relative px-4 max-w-7xl lg:px-0">
+      <div className="container relative px-4 overflow-hidden max-w-7xl lg:px-0 ">
         <div className="flex flex-row-reverse justify-between">
           <div className="w-full lg:w-[45%] overflow-hidden">
             <div className="mb-20">
@@ -17,7 +17,7 @@ const Appointment = () => {
             </div>
             <form className="w-full ">
               <div className="flex flex-col w-full ">
-                <label htmlFor="name" className="px-3 pb-6">
+                <label data-aos="fade-left" htmlFor="name" className="block px-3 pb-6">
                   <h4 className="text-base font-Poppins text-primary mb-[10px]">
                     Name
                   </h4>
@@ -29,7 +29,7 @@ const Appointment = () => {
                     className="border-2 rounded-2xl w-[306px] h-[60px] border-secondary/50 text-base font-Poppins text-primary/50 outline-none px-[21px] py-[18px] "
                   />
                 </label>
-                <label htmlFor="phoneNumber" className="px-3 pb-6">
+                <label data-aos="fade-left" htmlFor="phoneNumber" className="block px-3 pb-6">
                   <h4 className="text-base font-Poppins text-primary mb-[10px]">
                     Phone Number
                   </h4>
@@ -42,7 +42,7 @@ const Appointment = () => {
                   />
                 </label>
               </div>
-              <label htmlFor="medicalRecord" className="block px-3 pb-6 ">
+              <label data-aos="fade-left" htmlFor="medicalRecord" className="block px-3 pb-6 ">
                 <h4 className="text-base font-Poppins text-primary mb-[10px]">
                   Medical Record Number
                 </h4>
@@ -55,11 +55,11 @@ const Appointment = () => {
                 />
               </label>
               <div className="flex flex-col md:flex-row ">
-                <label htmlFor="preferredDate" className="px-3 pb-6 ">
-                  <h4 className="text-base font-Poppins text-primary mb-[10px]">
+                <label htmlFor="preferredDate" className="block px-3 pb-6 ">
+                  <h4 data-aos="fade-right" className="text-base font-Poppins text-primary mb-[10px]">
                     Preferred Date
                   </h4>
-                  <div className="w-[306px] h-[60px] border-2 rounded-2xl bg-third relative border-secondary/50 px-[21px] py-[18px]">
+                  <div data-aos="zoom-in-up" className="w-full h-[60px] border-2 rounded-2xl bg-third relative border-secondary/50 px-[21px] py-[18px]">
                     <input
                       type="text"
                       name="preferredDate"
@@ -70,11 +70,11 @@ const Appointment = () => {
                     <FaCalendarAlt className="absolute -translate-y-1/2 left-5 top-1/2 text-secondary w-[18px] h-5" />
                   </div>
                 </label>
-                <label htmlFor="phoneNumber" className="px-3 pb-6">
-                  <h4 className="text-base font-Poppins text-primary mb-[10px]">
+                <label htmlFor="phoneNumber" className="block px-3 pb-6">
+                  <h4 data-aos="fade-left" className="text-base font-Poppins text-primary mb-[10px]">
                     Preferred Time
                   </h4>
-                  <div className="w-[306px] h-[60px] border-2 rounded-2xl bg-third relative border-secondary/50 px-[21px] py-[18px]">
+                  <div data-aos="zoom-in-up" className="w-full h-[60px] border-2 rounded-2xl bg-third relative border-secondary/50 px-[21px] py-[18px]">
                     <input
                       type="text"
                       name="preferredTime"
@@ -87,11 +87,12 @@ const Appointment = () => {
                 </label>
               </div>
               <div className="w-[462px] px-3 pb-6">
-                <h4 className="mb-[10px] text-base font-Poppins text-primary">
+                <h4 data-aos="fade-right" className="mb-[10px] text-base font-Poppins text-primary">
                   Reason for Visit
                 </h4>
                 <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
                   <label
+                  data-aos="fade-up"
                     htmlFor="routine-checkup"
                     className="flex items-center gap-3"
                   >
@@ -106,6 +107,7 @@ const Appointment = () => {
                     </span>
                   </label>
                   <label
+                  data-aos="fade-up"
                     htmlFor="specific-concern"
                     className="flex items-center gap-3"
                   >
@@ -120,6 +122,7 @@ const Appointment = () => {
                     </span>
                   </label>
                   <label
+                  data-aos="fade-up"
                     htmlFor="new-patient-visit"
                     className="flex items-center gap-3"
                   >
@@ -136,11 +139,12 @@ const Appointment = () => {
                 </div>
               </div>
               <div className="w-[540px] px-3 pb-6">
-                <h4 className="mb-[10px] text-base font-Poppins text-primary">
+                <h4 data-aos="fade-right" className="mb-[10px] text-base font-Poppins text-primary">
                   Department
                 </h4>
                 <div className="grid grid-cols-1 gap-2 lg:grid-cols-4">
                   <label
+                  data-aos="fade-up"
                     htmlFor="routine-checkup"
                     className="flex items-center gap-3"
                   >
@@ -155,6 +159,7 @@ const Appointment = () => {
                     </span>
                   </label>
                   <label
+                  data-aos="fade-up"
                     htmlFor="specific-concern"
                     className="flex items-center gap-3 lg:col-span-2"
                   >
@@ -169,6 +174,7 @@ const Appointment = () => {
                     </span>
                   </label>
                   <label
+                  data-aos="fade-up"
                     htmlFor="new-patient-visit"
                     className="flex items-center gap-3"
                   >
@@ -183,6 +189,7 @@ const Appointment = () => {
                     </span>
                   </label>
                   <label
+                  data-aos="fade-up"
                     htmlFor="new-patient-visit"
                     className="flex items-center gap-3"
                   >
@@ -212,7 +219,7 @@ const Appointment = () => {
             <img
               src={ImageDoctorDetail.heroAppointment}
               alt="Appointment"
-              className="absolute sm:block hidden left-0"
+              className="absolute left-0 hidden sm:block"
             />
           </div>
         </div>

@@ -3,7 +3,7 @@ import CardDepartmentsTwo from "./CardDepartmentsTwo";
 
 const DepartmentsTwo = () => {
   return (
-    <section className="pt-[50px] pb-[72px]">
+    <section className="pt-[50px] pb-[72px] bg-red-500">
       <div className="container px-4 max-w-7xl lg:px-0">
         <div className="mb-5 lg:mb-12">
           <SectionTitle>Departments</SectionTitle>

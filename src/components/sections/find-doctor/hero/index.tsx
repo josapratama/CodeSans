@@ -15,8 +15,8 @@ const HeroBanner = () => {
       />
       <div className="container pt-4 overflow-hidden max-w-7xl lg:px-0">
         <div className="flex flex-col items-center justify-center mx-4 lg:flex-row lg:justify-start">
-          <div className="flex flex-col sm:gap-6 gap-4 -translate-y-10 w-full lg:w-[50%]">
-            <SectionTitle dataAos="fade-right" data-aos-once="true" classname="leading-tight">
+          <div className="flex flex-col sm:gap-6 gap-4 lg:-translate-y-10 w-full lg:w-[50%]">
+            <SectionTitle dataAos="fade-right" data-aos-once="true" classname="">
               Introduce You to
               <br /> Our Experts
             </SectionTitle>
