@@ -12,7 +12,7 @@ const Main = () => {
 
   const filterData = () => {
     if (category == "All") {
-      setData(doctors.slice(0,12));
+      setData(doctors.slice(0, 12));
     } else {
       const newData = doctors.filter((value) =>
         value.role.toLowerCase().includes(category.toLowerCase())
@@ -26,14 +26,15 @@ const Main = () => {
   }, [category]);
   return (
     <>
-      <section className="flex flex-row justify-between items-center my-10 sm:mx-20 mx-5">
-        <div className="flex flex-row gap-8 justify-center items-center">
-          <SectionSubTitle classname="sm:block hidden">
+      <section className="flex flex-row items-center justify-between mx-5 my-10 sm:mx-20">
+        <div className="flex flex-row items-center justify-center gap-8">
+          <SectionSubTitle classname="hidden sm:block">
             <h1 className="text-sm text-primary/50">Sort by</h1>
           </SectionSubTitle>
-          <div className="flex flex-row sm:gap-4 gap-2">
+          <div className="flex flex-row gap-2 sm:gap-4">
             {dataCategory.map((value) => (
               <button
+                data-aos="fade-right"
                 key={value}
                 className={`sm:text-sm text-xs px-4 py-2 font-Poppins ${
                   category === value
@@ -47,7 +48,7 @@ const Main = () => {
             ))}
           </div>
         </div>
-        <div className=" flex-row gap-4 items-center justify-center sm:flex hidden">
+        <div className="flex-row items-center justify-center hidden gap-4 sm:flex">
           <SectionSubTitle>
             <h1 className="text-sm text-primary/50">Showing 12 items</h1>
           </SectionSubTitle>
@@ -61,19 +62,27 @@ const Main = () => {
             <CardDoctor data={data} />
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center gap-4 my-10">
+        <div className="flex flex-row items-center justify-center gap-4 my-10">
           <FaArrowLeft className="sm:size-6 size-4 text-secondary" />
           <div className="flex flex-row gap-4">
-            <button className="sm:py-2 sm:px-4 py-1 px-3 bg-third text-secondary rounded-lg">1</button>
-            <button className="sm:py-2 sm:px-4 py-1 px-3 bg-third text-secondary rounded-lg">2</button>
-            <button className="sm:py-2 sm:px-4 py-1 px-3 bg-third text-secondary rounded-lg">3</button>
-            <button className="sm:py-2 sm:px-4 py-1 px-3 bg-third text-secondary rounded-lg">4</button>
+            <button className="px-3 py-1 rounded-lg sm:py-2 sm:px-4 bg-third text-secondary">
+              1
+            </button>
+            <button className="px-3 py-1 rounded-lg sm:py-2 sm:px-4 bg-third text-secondary">
+              2
+            </button>
+            <button className="px-3 py-1 rounded-lg sm:py-2 sm:px-4 bg-third text-secondary">
+              3
+            </button>
+            <button className="px-3 py-1 rounded-lg sm:py-2 sm:px-4 bg-third text-secondary">
+              4
+            </button>
           </div>
           <FaArrowRight className="sm:size-6 size-4 text-secondary" />
         </div>
       </section>
     </>
   );
-}
+};
 
-export default Main
+export default Main;

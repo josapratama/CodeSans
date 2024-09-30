@@ -3,7 +3,7 @@ import SectionTitle from "../../../elements/SectionTitle";
 
 const BackSeat = () => {
   return (
-    <section className="pt-[50px] sm:pb-[400px] sm:translate-y-[270px] bg-third">
+    <section className=" sm:pb-[400px] pt-10 sm:translate-y-[270px] bg-third">
       <div className="container px-4 max-w-7xl lg:px-0">
         <div className="flex flex-col items-center justify-center text-center">
           <img data-aos="fade-up" src={ImageDetailDepartments.drPerson} alt="Dr Person" />

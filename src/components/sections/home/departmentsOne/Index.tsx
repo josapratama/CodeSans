@@ -4,7 +4,7 @@ import CardDepartmentsOne from "./CardDepartmentsOne";
 
 const DepartmentsOne = () => {
   return (
-    <section className="py-[50px]">
+    <section className="md:py-[50px] pt-[50px] pb-6">
       <div
         className="container relative bg-center bg-no-repeat bg-cover max-w-7xl rounded-2xl h-[600px] lg:h-[400px] pt-20 mb-28"
         style={{

@@ -7,7 +7,7 @@ import { ImageDetailDepartments } from "../../../../assets/images/departmentsDet
 
 const Appointment = () => {
   return (
-    <section className="pb-[10px] pt-[50px]">
+    <section className="translate-y-[100px] pt-[50px]">
       <div className="container px-4 overflow-hidden max-w-7xl lg:px-0">
         <div className="relative flex flex-col gap-10 md:flex-row">
           <div className="w-full md:w-1/2">
